@@ -26,9 +26,7 @@
 
     <!-- Body Content -->
     <div id="section-body">
-      <div id="employee_content_profile">
-        
-      </div>
+      <div id="employee_content_profile"></div>
     </div>
 
     <!-- jQuery -->
@@ -38,7 +36,9 @@
       $(document).ready(function () {
         $("#left-nav").load("layout/sidebar.html");
         $("#top-nav").load("layout/header.html");
-        $("#employee_content_profile").load("employee_profile_content/main.html");
+        $("#employee_content_profile").load(
+          "employee_profile_content/main.html"
+        );
       });
     </script>
     <!-- Bootstrap 5 -->
