@@ -9,105 +9,17 @@
       </div>
     </div>
     <div class="row">
-      <!-- Employee Profile -->
-      <div class="col-md-12 col-6 overflow-wrap-any">
-        <li class="text-center pb-1">
-          <a class="pb-2 pt-2" href="/">
-            <img src="/dist/img/sidebar/Icon-HRD_Employee Profile.png" />
-            <p>Employee Profile</p>
-          </a>
-        </li>
-      </div>
-      <!-- Attendance Online -->
-      <div class="col-md-12 col-6 overflow-wrap-any">
-        <li class="text-center pb-1">
-          <a class="pb-2 pt-2" href="/attendance_online.html">
-            <img src="/dist/img/sidebar/Icon-HRD_Attendance Online.png" />
-            <p>Attendance Online</p>
-          </a>
-        </li>
-      </div>
-      <!-- Over Time -->
-      <div class="col-md-12 col-6 overflow-wrap-any">
-        <li class="text-center pb-1">
-          <a class="pb-2 pt-2" href="/over_time.html">
-            <img src="/dist/img/sidebar/Icon-HRD_Overtime.png" />
-            <p>Over Time</p>
-          </a>
-        </li>
-      </div>
-      <!-- Time Management -->
-      <div class="col-md-12 col-6 overflow-wrap-any">
-        <li class="text-center pb-1">
-          <a class="pb-2 pt-2" href="/time_management.html">
-            <img src="/dist/img/sidebar/Icon-HRD_Time Management.png" />
-            <p>Time Management</p>
-          </a>
-        </li>
-      </div>
-      <!-- Medical Claim -->
-      <div class="col-md-12 col-6 overflow-wrap-any">
-        <li class="text-center pb-1">
-          <a class="pb-2 pt-2" href="/medical_claim.html">
-            <img src="/dist/img/sidebar/Icon-HRD_Medical Claim.png" />
-            <p>Medical Claim</p>
-          </a>
-        </li>
-      </div>
-      <!-- Employee Message -->
-      <div class="col-md-12 col-6 overflow-wrap-any">
-        <li class="text-center pb-1">
-          <a class="pb-2 pt-2" href="/employee_message.html">
-            <img src="/dist/img/sidebar/Icon-HRD_Employee Message.png" />
-            <p>Employee Message</p>
-          </a>
-        </li>
-      </div>
-      <!-- Performance -->
-      <div class="col-md-12 col-6 overflow-wrap-any">
-        <li class="text-center pb-1">
-          <a class="pb-2 pt-2" href="/performance.html">
-            <img src="/dist/img/sidebar/Icon-HRD_Perfomance.png" />
-            <p>Performance</p>
-          </a>
-        </li>
-      </div>
-      <!-- KPI Operation -->
-      <div class="col-md-12 col-6 overflow-wrap-any">
-        <li class="text-center pb-1">
-          <a class="pb-2 pt-2" href="/kpi_operation.html">
-            <img src="/dist/img/sidebar/Icon-HRD_KPI Operation.png" />
-            <p>KPI Operation</p>
-          </a>
-        </li>
-      </div>
-      <!-- KK-SK Online -->
-      <div class="col-md-12 col-6 overflow-wrap-any">
-        <li class="text-center pb-1">
-          <a class="pb-2 pt-2" href="/kk_sk_online.html">
-            <img src="/dist/img/sidebar/Icon-HRD_KK-SK Online.png" />
-            <p>KK-SK Online</p>
-          </a>
-        </li>
-      </div>
-      <!-- Termination -->
-      <div class="col-md-12 col-6 overflow-wrap-any">
-        <li class="text-center pb-1">
-          <a class="pb-2 pt-2" href="/termination.html">
-            <img src="/dist/img/sidebar/Icon-HRD_Termination.png" />
-            <p>Termination</p>
-          </a>
-        </li>
-      </div>
-      <!-- Pekerja Harian Lepas -->
-      <div class="col-md-12 col-6 overflow-wrap-any">
-        <li class="text-center pb-1">
-          <a class="pb-2 pt-2" href="/pekerjaan_harian_lepas.html">
-            <img src="/dist/img/sidebar/Icon-HRD_Pekerjaan Harian Lepas.png" />
-            <p>Pekerja Harian Lepas</p>
-          </a>
-        </li>
-      </div>
+      <div class="sidebar-loop"></div>
+      <!-- Sidebar -->
+      <script>
+        var lala = $("div .sidebar-loop");
+        var judulSide = [ "Employee Profile", "Attendance Online", "Over Time", "Time Management", "Medical Claim", "Employee Message", "Performance", "KPI Operation", "KK-SK Online", "Termination", "Pekerja Harian Lepas", "Internal Career System", "Man Power Planning", "IKT Online", "Champs Check", "Prakerin", "Approval SO Karyawan", "Update Data HC", "Employee Relation", "Talent Management", "Performance Dashboard", "SO Karyawan Warehouse", "Perjanjian Kerja", ];
+        var linkSide = [ "/", "attendance_online.html", "over_time.html", "time_management.html", "medial_claim.html", "employee_message.html", "performance.html", "kpi_operation.html", "kk_sk_online.html", "termination.html", "pekerja_harian_lepas.html", "internal_career_system.html", "man_power_planning.html", "ikt_online.html", "champs_check.html", "prakerin.html", "approval_so_karyawan.html", "update_data_hc.html", "employee_relation.html", "talent_management.html", "performance_dashboard.html", "so_karyawan_warehouse.html", "perjanjian_kerja.html", ];
+
+        for (var i = 0; i < judulSide.length; i++) {
+          lala.append('<div class="col-md-12 col-6 overflow-wrap-any"> <li class="text-center pb-1"> <a class="pb-2 pt-2" href="'+ linkSide[i] +'"> <img src="/dist/img/sidebar/'+ judulSide[i] +'.png" /> <p>'+ judulSide[i] +'</p> </a> </li> </div>');
+        }
+      </script>
     </div>
   </ul>
 </nav>
