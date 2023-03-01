@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Title -->
+    <title>Human Capital</title>
+    <!-- Icon Tab -->
+    <link rel="icon" type="image/gif" href="dist/img/icon-head.jpg" />
+    <!-- Style -->
+    <link rel="stylesheet" href="dist/css/style.css" />
+    <link rel="stylesheet" href="dist/css/bootstrap.min.css" />
+    <!-- Font Awesome -->
+    <script src="/dist/js/fontawesome.js"></script>
+  </head>
+
+  <body>
+    <!-- Sidebar -->
+    <div id="left-nav"></div>
+
+    <!-- Header -->
+    <div id="top-nav"></div>
+
+    <!-- Body Content -->
+    <div id="section-body">
+      <div id="employee_content_profile">
+        
+      </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="dist/js/jquery.min.js"></script>
+    <!-- Include HTML -->
+    <script>
+      $(document).ready(function () {
+        $("#left-nav").load("layout/sidebar.html");
+        $("#top-nav").load("layout/header.html");
+        $("#employee_content_profile").load("employee_profile_content/main.html");
+      });
+    </script>
+    <!-- Bootstrap 5 -->
+    <script src="dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

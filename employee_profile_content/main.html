@@ -1,0 +1,165 @@
+<link
+  rel="stylesheet"
+  href="dist/css/employee_profile_css/employee_style.css"
+/>
+<!-- Tabs -->
+<div class="bg-white pb-2 overflow-x-scroll">
+  <div class="container-fluid pt-2 pb-2 pt-lg-0 pb-lg-0">
+    <ul
+      class="nav nav-pills custom-nav-tab w-max-content"
+      id="pills-tab"
+      role="tablist"
+    >
+      <!-- Profile -->
+      <li class="nav-item" role="presentation">
+        <button
+          class="nav-link active"
+          data-bs-toggle="pill"
+          data-bs-target="#pills-profile"
+          type="button"
+          role="tab"
+        >
+          <div class="d-flex align-items-center">
+            <img src="/dist/img/nav-tab/ic_profil.png" class="me-1 clr-prof" />
+            <p>Profile</p>
+          </div>
+        </button>
+      </li>
+      <!-- History Karyawan -->
+      <li class="nav-item" role="presentation">
+        <button
+          class="nav-link"
+          data-bs-toggle="pill"
+          data-bs-target="#pills-karyawan"
+          type="button"
+          role="tab"
+        >
+          <div class="d-flex align-items-center">
+            <img src="/dist/img/nav-tab/ic_history.png" class="me-1 clr-hsk" />
+            <p>History Karyawan</p>
+          </div>
+        </button>
+      </li>
+      <!-- Menu Atasan -->
+      <li class="nav-item" role="presentation">
+        <button
+          class="nav-link"
+          data-bs-toggle="pill"
+          data-bs-target="#pills-menu-atasan"
+          type="button"
+          role="tab"
+        >
+          <div class="d-flex align-items-center">
+            <img
+              src="/dist/img/nav-tab/ic_menu_atasan.png"
+              class="me-1 clr-ma"
+            />
+            <p>Menu Atasan</p>
+          </div>
+        </button>
+      </li>
+      <!-- Presensi -->
+      <li class="nav-item" role="presentation">
+        <button
+          class="nav-link"
+          data-bs-toggle="pill"
+          data-bs-target="#pills-presensi"
+          type="button"
+          role="tab"
+        >
+          <div class="d-flex align-items-center">
+            <img src="/dist/img/nav-tab/ic_presensi.png" class="me-1 clr-pr" />
+            <p>Presensi</p>
+          </div>
+        </button>
+      </li>
+      <!-- Token -->
+      <li class="nav-item" role="presentation">
+        <button
+          class="nav-link"
+          data-bs-toggle="pill"
+          data-bs-target="#pills-token"
+          type="button"
+          role="tab"
+        >
+          <div class="d-flex align-items-center">
+            <img src="/dist/img/nav-tab/ic_token.png" class="me-1 clr-tk" />
+            <p>Token</p>
+          </div>
+        </button>
+      </li>
+      <!-- Request Epayslip -->
+      <li class="nav-item" role="presentation">
+        <button
+          class="nav-link"
+          data-bs-toggle="pill"
+          data-bs-target="#pills-epayslip"
+          type="button"
+          role="tab"
+        >
+          <div class="d-flex align-items-center">
+            <img src="/dist/img/nav-tab/ic_epayslip.png" class="me-1 clr-re" />
+            <p>Request Epayslip</p>
+          </div>
+        </button>
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="container-fluid">
+  <div class="tab-content" id="pills-tabContent">
+    <!-- Profile -->
+    <div class="mt-2 tab-pane fade show active" id="pills-profile" role="tabpanel"></div>
+    <!-- History Karyawan -->
+    <div class="tab-pane fade" id="pills-karyawan" role="tabpanel">
+      <div
+        class="d-flex justify-content-center align-items-center"
+        style="height: 80vh"
+      >
+        <img src="/dist/img/Coming Soon.png" width="400" />
+      </div>
+    </div>
+    <!-- Menu Atasan -->
+    <div class="tab-pane fade" id="pills-menu-atasan" role="tabpanel">
+      <div
+        class="d-flex justify-content-center align-items-center"
+        style="height: 80vh"
+      >
+        <img src="/dist/img/Coming Soon.png" width="400" />
+      </div>
+    </div>
+    <!-- Presensi -->
+    <div class="tab-pane fade" id="pills-presensi" role="tabpanel">
+      <div
+        class="d-flex justify-content-center align-items-center"
+        style="height: 80vh"
+      >
+        <img src="/dist/img/Coming Soon.png" width="400" />
+      </div>
+    </div>
+    <!-- Token -->
+    <div class="tab-pane fade" id="pills-token" role="tabpanel">
+      <div
+        class="d-flex justify-content-center align-items-center"
+        style="height: 80vh"
+      >
+        <img src="/dist/img/Coming Soon.png" width="400" />
+      </div>
+    </div>
+    <!-- Request Epaysplip -->
+    <div class="tab-pane fade" id="pills-epayslip" role="tabpanel">
+      <div
+        class="d-flex justify-content-center align-items-center"
+        style="height: 80vh"
+      >
+        <img src="/dist/img/Coming Soon.png" width="400" />
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  $(document).ready(function () {
+    $("#pills-profile").load("employee_profile_content/sub_tab/profile.html");
+  });
+</script>

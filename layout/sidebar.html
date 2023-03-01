@@ -1,0 +1,66 @@
+<nav id="sidebar">
+  <ul class="list-unstyled components">
+    <div class="desktop-none">
+      <div class="d-flex align-items-center mb-3">
+        <h5>Employee Self Service</h5>
+        <button
+          type="button"
+          id="sidebarRemove"
+          class="btn btn-tutup ms-auto"
+        >
+          <i class="fa-solid fa-x"></i>
+        </button>
+      </div>
+    </div>
+    <div class="row">
+      <!-- Employee Profile -->
+      <div class="col-md-12 col-6 overflow-wrap-any">
+        <li class="text-center pb-1">
+          <a class="pb-2 pt-2" href="/employee_profile.html">
+            <img src="/dist/img/sidebar/Icon-HRD_Employee Profile.png"/>
+            <p>Employee Profile</p>
+          </a>
+        </li>
+      </div>
+      <!-- Attendance Online -->
+      <div class="col-md-12 col-6 overflow-wrap-any">
+        <li class="text-center pb-1">
+          <a class="pb-2 pt-2" href="/attendance_online.html">
+            <img src="/dist/img/sidebar/Icon-HRD_Attendance Online.png" />
+            <p>Attendance Online</p>
+          </a>
+        </li>
+      </div>
+      <!-- Over Time -->
+      <div class="col-md-12 col-6 overflow-wrap-any">
+        <li class="text-center pb-1">
+          <a class="pb-2 pt-2" href="/.html">
+            <img src="/dist/img/sidebar/Icon-HRD_Overtime.png" />
+            <p>Over Time</p>
+          </a>
+        </li>
+      </div>
+      <!-- Time Management -->
+      <div class="col-md-12 col-6 overflow-wrap-any">
+        <li class="text-center pb-1">
+          <a class="pb-2 pt-2" href="/.html">
+            <img src="/dist/img/sidebar/Icon-HRD_Time Management.png" />
+            <p>Time Management</p>
+          </a>
+        </li>
+      </div>
+    </div>
+  </ul>
+</nav>
+
+<script defer src="dist/js/active-sidebar.js"></script>
+
+<script>
+  $(document).ready(function () {
+    $("#sidebarRemove").on("click", function () {
+      $("#sidebar").removeClass("active");
+      $("#section-header").removeClass("active");
+      $("#section-body").removeClass("active");
+    });
+  });
+</script>

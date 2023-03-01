@@ -1,0 +1,63 @@
+<!-- Header Content -->
+<div id="section-header">
+  <div class="bg-white">
+    <nav class="main-header navbar navbar-expand">
+      <div class="container-fluid d-flex">
+        <div class="d-flex-none gap-2 align-items-center">
+          <button type="button" id="sidebarCollapse" class="btn p-0">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <h5 class="mobile-none">Employee Self Service</h5>
+        </div>
+        <div
+          class="ms-auto d-flex align-items-center background-btn color-white responsive-text"
+        >
+          <div class="dropdown vertical-right">
+            <button
+              class="btn nav-link pb-0 pt-0 h-0 btn-profile"
+              data-bs-toggle="dropdown"
+              title="Profile User"
+              aria-expanded="false"
+            >
+              <i class="far fa-user"></i>
+              <span class="m-0 ms-1">22086051 • Z001</span>
+            </button>
+            <div class="dropdown-menu dropdown-menu-end dropdown-menu-lg p-3">
+              <!-- Profil -->
+              <div class="media">
+                <img
+                  src="/dist/img/avatar.gif"
+                  class="img-size-50 img-circle me-3 border border-secondary"
+                />
+                <div class="media-body overflow-wrap-any">
+                  <h3 class="dropdown-item-title text-wrap">
+                    Nicholass Jeffensen Purnama
+                  </h3>
+                  <p class="text-md">IT UI/UX Analyst</p>
+                  <p class="text-md text-muted">22086051 • Z001</p>
+                </div>
+              </div>
+              <!-- Profil End -->
+            </div>
+          </div>
+          <div class="nav-item">
+            <a href="" title="Logout" class="nav-link color-logout"
+              ><span><i class="fas fa-sign-out-alt me-1"></i>Log out</span></a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+</div>
+
+<!-- Toggle Sidebar -->
+<script>
+  $(document).ready(function () {
+    $("#sidebarCollapse").on("click", function () {
+      $("#sidebar").toggleClass("active");
+      $("#section-header").toggleClass("active");
+      $("#section-body").toggleClass("active");
+    });
+  });
+</script>
